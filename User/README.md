@@ -36,7 +36,7 @@ Ensure you have the following installed before running the application:
 
 ## Project Architecture Design
 
-![Architecture Diagram](https://github.com/Dynamicsubham/PDF-Reader-User/blob/master/AI%20Architechture%20design.png)
+![Architecture Diagram](User/AI Architechture design.png)
 
 ## Installation & Setup
 
