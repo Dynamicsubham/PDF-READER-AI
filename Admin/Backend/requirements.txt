@@ -1,0 +1,11 @@
+streamlit
+pypdf
+langchain
+faiss-cpu
+boto3
+langchain-community
+langchain-aws
+fastapi
+uvicorn
+python-multipart
+

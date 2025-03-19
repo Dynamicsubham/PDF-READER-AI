@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  backend:
+    build: 
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: rag_bedrock_backend
+    ports:
+      - "8000:8000"
+    environment:
+      - AWS_REGION
+      - BUCKET_NAME
+      - AWS_ACCESS_KEY_ID
+      - AWS_SECRET_ACCESS_KEY
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: rag_bedrock_frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
